@@ -14,15 +14,7 @@ public class Department {
     }
 
     public void addEmployee(String type, int id) {
-        Employee e;
-
-        if(type.equalsIgnoreCase("FULL")) {
-            e = new FullTimeEmployee(id);
-        } else if (type.equalsIgnoreCase("PART")) {
-            e = new PartTimeEmployee(id);
-        } else {
-            throw new IllegalArgumentException();
-        }
+        Employee e = EmployeeFactory.newEmployee(type, id);
         addEmployee(e);
     }
 

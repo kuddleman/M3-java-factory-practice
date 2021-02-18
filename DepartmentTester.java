@@ -11,6 +11,10 @@ public class DepartmentTester {
             int id = Integer.parseInt(scan.nextLine());
             System.out.println("What type? full, part or intern");
             String type = scan.nextLine();
+
+            salesDepartment.addEmployee(type, id);
         }
+
+        salesDepartment.runPayroll();
     }
 }
