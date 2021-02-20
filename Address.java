@@ -43,6 +43,10 @@ public class Address {
             this.state = var;
             return this;
         }
+        public AddressBuilder zip2(String var) {
+            this.zip2 = var;
+            return this;
+        }
         public AddressBuilder country(String var) {
             this.country = var;
             return this;
