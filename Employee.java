@@ -55,9 +55,7 @@ public abstract class Employee implements Comparable<Employee> {
 			return Integer.compare(id,  emp.id); 
 	}
 	
-	public void pay() {
-		System.out.println("Running payroll for " + id);
-	}
+	public abstract void pay();
 	
 
 	public void review() {

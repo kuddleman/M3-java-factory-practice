@@ -4,6 +4,11 @@ public class FullTimeEmployee extends Employee {
 	public FullTimeEmployee(int id) {
 		super(id); 
 	}
+
+	@Override
+	public void pay() {
+		System.out.println("Paying " + super.getId() + " based on salary.");
+	}
 	
 	@Override
 	public void timeOff() {
