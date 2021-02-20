@@ -2,19 +2,19 @@
 public abstract class Employee implements Comparable<Employee> {
 	
 	private int id;
+	private String name;
+	private Payer payer;
 	
 	private static int numEmployees = 0;
    public static final int DEFAULT_ID = 0;
 	
 	
-	public Employee(int id) {
+	public Employee(int id, String name, Payer payer) {
 		this.id = id;		
 		Employee.numEmployees++;
 	}
    
-   public Employee() {
-      this(DEFAULT_ID);
-   }
+
 	
 	public int getId() {
 		return id;
@@ -55,7 +55,9 @@ public abstract class Employee implements Comparable<Employee> {
 			return Integer.compare(id,  emp.id); 
 	}
 	
-	public abstract void pay();
+	public void pay() {
+		payer.pay();
+	}
 	
 
 	public void review() {

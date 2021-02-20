@@ -1,8 +1,8 @@
 
 public class PartTimeEmployee extends Employee {
 		
-	public PartTimeEmployee(int id) {
-		super(id);
+	public PartTimeEmployee(int id, String name, Payer payer) {
+		super(id, name, payer);
 	}
 	
 	

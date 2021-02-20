@@ -1,8 +1,8 @@
 
 public class FullTimeEmployee extends Employee {
 		
-	public FullTimeEmployee(int id) {
-		super(id); 
+	public FullTimeEmployee(int id, String name) {
+		super(id, name, new SalaryPayer());
 	}
 
 	@Override

@@ -1,7 +1,7 @@
 public class Intern extends Employee {
 
-    public Intern(int id) {
-        super(id);
+    public Intern(int id, String name) {
+        super(id, name, new NoPayer());
     }
 
     @Override
